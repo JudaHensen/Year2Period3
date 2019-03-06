@@ -25,7 +25,7 @@ void wifiConnect() { // connect to local network
   int ledState = 0; // flasher
   digitalWrite(wifiOk, LOW);
   digitalWrite(wifiConnecting, HIGH);
-  Serial.println();
+  Serial.println("");
   Serial.print("Connecting to ");
   Serial.println(ssid);
   WiFi.begin(ssid, password);
